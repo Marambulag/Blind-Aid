@@ -1,0 +1,6 @@
+../Core/Src/drv_vl53l5x.c:6:15:vl5_write_reg	2
+../Core/Src/drv_vl53l5x.c:13:15:vl5_read_reg	2
+../Core/Src/drv_vl53l5x.c:22:8:vl5_init	2
+../Core/Src/drv_vl53l5x.c:39:8:vl5_start_ranging	2
+../Core/Src/drv_vl53l5x.c:50:8:vl5_check_data_ready	1
+../Core/Src/drv_vl53l5x.c:55:8:vl5_get_ranging_data	3

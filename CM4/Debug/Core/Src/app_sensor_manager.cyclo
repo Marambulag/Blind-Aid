@@ -1,0 +1,2 @@
+../Core/Src/app_sensor_manager.c:23:6:app_sensor_manager_init	1
+../Core/Src/app_sensor_manager.c:27:13:SensorManagerTask	3
