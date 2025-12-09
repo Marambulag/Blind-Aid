@@ -2,8 +2,12 @@
 
 ## Overview
 
-This project is a **Blind Aid System** currently under development to assist visually impaired individuals in navigating their environment safely. It uses **Time-of-Flight (ToF) sensors** and **ultrasonic sensors** together to detect obstacles and provide **tactile feedback** through a matrix of coin vibration motors.  
+## 🚀 Key Features
 
- **Work in Progress:** Features are still being implemented and tested.
-
----
+* **Hybrid Sensing Architecture:** Fuses high-resolution LiDAR data (VL53L5CX) with robust Ultrasonic measurements (HC-SR04) to detect obstacles including glass and black materials.
+* **Distributed Processing:**
+    * **Raspberry Pi:** Handles heavy DSP (Median Filtering, Pooling, NumPy) and Computer Vision.
+    * **ESP32:** Executes Real-Time Control using **FreeRTOS** for jitter-free haptic feedback.
+* **Smart Haptics:** 3x3 Vibration Matrix with linear intensity mapping (Open-Loop Control) to represent distance.
+* **Silent Operation:** Motors operate at **25 kHz PWM** (Ultrasonic frequency) to avoid audible noise.
+* **Safety First:** Includes brownout protection, sensor timeouts, and startup self-diagnostics.
